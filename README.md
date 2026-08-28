@@ -1,13 +1,15 @@
-# 🚀 Cloud & Cybersecurity Portfolio – Victor Matos
+<h1 align="center"><b>Hi , I'm Victor Matos <img src="https://emojis.slackmojis.com/emojis/images/1577305505/7373/hand_wave.gif?1577305505" width="50" /> </h1>
 
-Welcome to my Cloud & Security Engineering Portfolio.  
+<p>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?&font=IBM+Plex+Sans&color=abcdef&size=20&lines=Welcome+to+my+Cloud+and+Security+Portfolio!;I'm+a+Security+Analyst!;" /></a>
+</p> 
 This repository showcases hands-on projects focused on AWS architecture, cloud security, automation, networking, and best practices for resilient cloud environments.
 
 My goal is to demonstrate real-world skills through practical, reproducible projects—each designed using professional standards, cybersecurity principles, and modern cloud design patterns.
 
 ---
 
-## 🔐 About Me
+## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About me
 
 I am a Cloud & Security Enthusiast transitioning into the IT and cloud industry with a strong commitment to continuous learning and hands-on experience.  
 Although my professional background comes from leadership, operations, and customer-facing roles, I have built a solid technical foundation through structured study, labs, real cloud projects, and multiple industry-recognized certifications.
