@@ -34,7 +34,8 @@ A static public IP address is required on the GCP side to act as the external en
 4. **Network Service Tier:** Premium or Standard (based on your target region).
 5. **Region:** Select the region matching your GCP VPC.
 6. Click **Reserve** and copy the generated external IP address (e.g., `35.200.X.X`).
-
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/RESERVARIPSTATIC-1.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/RESERVARIPSTATIC-2.png)
 ---
 
 ### Step 2: Configure AWS Gateways and VPN Connection
@@ -66,6 +67,10 @@ The VGW serves as the VPN concentrator on the AWS side.
 6. **Static IP Prefixes:** Enter the GCP VPC/subnet CIDR block (e.g., `10.128.0.0/20`).
 7. Click **Create VPN Connection**.
 
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/GW-1.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/GW-2.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/GW-3.png)
+
 ---
 
 ### Step 3: Download AWS VPN Configuration Metadata
@@ -80,6 +85,9 @@ The VGW serves as the VPN concentrator on the AWS side.
    * **Virtual Private Gateway External IP (AWS Endpoint):** `54.X.X.X`
    * **Pre-Shared Key (PSK):** `generated_secret_string`
    * **IKE Version:** IKEv2 (or IKEv1)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/ARCHIVOVPN.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/ARCHIVOVPN-2.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/ARCHIVOVPN-3.png)
 
 ---
 
@@ -99,7 +107,8 @@ The VGW serves as the VPN concentrator on the AWS side.
    * **Routing Options:** Select `Static`.
    * **Remote Network IP Ranges:** Enter the AWS VPC CIDR block (e.g., `172.31.0.0/16`).
 5. Click **Create**.
-
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/CREARCLASSICVPN.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/CREARCLASSICVPN-2.png)
 ---
 
 ### Step 5: Configure Route Tables and Firewall Rules
@@ -139,10 +148,10 @@ The VGW serves as the VPN concentrator on the AWS side.
      ping -c 4 172.31.16.2
      ```
    * Repeat the verification step in reverse (SSH into EC2 and ping `10.128.0.2`).
-
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/INSTANCE-1.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/INSTANCE-2.png)
+![Nombre descriptivo](https://github.com/victormatos-sec/cloud-portafolio/blob/main/VPN-GCP-AWS/Screenshots/TEST.png)
 ---
 
 ## 🔒 Security Best Practices
-
-* **Secret Management:** Never commit Pre-Shared Keys (PSKs) or raw configuration files to public repositories. Use environment variables or secret vaults.
 * **Principle of Least Privilege:** Restrict Security Groups and GCP Firewall Rules strictly to necessary CIDR ranges and required ports instead of exposing `0.0.0.0/0`.
