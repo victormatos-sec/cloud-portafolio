@@ -13,7 +13,7 @@ The solution centralizes audit logs and security events into a dedicated **Log A
 ## 📊 Solution Architecture
 The following diagram illustrates the overall data flow, connectors, and automated response capabilities across the different clouds and the central Azure SOC:
 
-![Multicloud SOC Architecture](https://raw.githubusercontent.com/vmatos9/proyecto-soc-multicloud/main/images/arquitectura.png)
+![Multicloud SOC Architecture](https://github.com/victormatos-sec/cloud-portafolio/blob/main/PROJECT-SOC-MULTICLOUD/Diagram.jpg)
 
 ### Key Benefits:
 * **Unified Visibility:** Centralized monitoring across multi-cloud and on-premise workloads.
